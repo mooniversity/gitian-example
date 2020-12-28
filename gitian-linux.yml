@@ -11,7 +11,7 @@ packages:
 remotes:
 - "url": "https://github.com/mooniversity/gitian-example.git"
   "dir": "gitian-example"
-  "commit": "TODO"
+  "commit": "1875b8dcdeae3f755ae9d9bf779142c42e792589"
 files: []
 script: |
   cd gitian-example
