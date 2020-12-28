@@ -1,0 +1,20 @@
+---
+name: "hello-linux"
+enable_cache: true
+distro: "ubuntu"
+suites:
+- "bionic"
+architectures:
+- "amd64"
+packages:
+- "gcc"
+remotes:
+- "url": "https://github.com/mooniversity/gitian-example.git"
+  "dir": "gitian-example"
+  "commit": "TODO"
+files: []
+script: |
+  cd gitian-example
+  export SOURCE_DATE_EPOCH=0
+  g++ hello.cpp -o hello
+  mv hello $OUTDIR
